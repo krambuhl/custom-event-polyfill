@@ -16,5 +16,5 @@
     "type": "git",
     "url": "git@github.com:krambuhl/custom-event-polyfill.git"
   },
-
+  "dependencies": {}
 }
