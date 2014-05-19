@@ -1,0 +1,20 @@
+{
+  "name": "custom-event-polyfill",
+  "version": "0.1.0",
+  "author": [
+    "Evan Krambuhl <thekrambuhl@gmail.com>",
+    "Mozilla Developer Network"
+  ],
+  "keywords": [
+    "polyfill",
+    "custom-event",
+    "CustomEvent",
+    "Web API Interface"
+  ],
+  "main": "./custom-event-polyfill.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:krambuhl/custom-event-polyfill.git"
+  },
+
+}
