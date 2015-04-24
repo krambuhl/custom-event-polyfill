@@ -1,9 +1,9 @@
 {
   "name": "custom-event-polyfill",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": [
-    "Evan Krambuhl <thekrambuhl@gmail.com>",
-    "Mozilla Developer Network"
+    "Mozilla Developer Network",
+    "Evan Krambuhl <thekrambuhl@gmail.com>"
   ],
   "keywords": [
     "polyfill",
@@ -16,5 +16,12 @@
     "type": "git",
     "url": "git@github.com:krambuhl/custom-event-polyfill.git"
   },
-  "dependencies": {}
+  "scripts": {
+    "test": "karma start"
+  },
+  "devDependencies": {
+    "karma": "^0.12.31",
+    "karma-jasmine": "^0.3.5",
+    "karma-sauce-launcher": "^0.2.10"
+  }
 }
