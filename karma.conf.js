@@ -2,28 +2,43 @@ module.exports = function(config) {
   // Example set of browsers to run on Sauce Labs
   // Check out https://saucelabs.com/platforms for all browser/platform combos
   var customLaunchers = {
-    sl_chrome: {
+    sl_ie_9: {
       base: 'SauceLabs',
-      browserName: 'chrome',
+      browserName: 'internet explorer',
       platform: 'Windows 7',
-      version: '35'
+      version: '9'
     },
-    sl_firefox: {
+    sl_ie_10: {
       base: 'SauceLabs',
-      browserName: 'firefox',
-      version: '30'
-    },
-    sl_ios_safari: {
-      base: 'SauceLabs',
-      browserName: 'iphone',
-      platform: 'OS X 10.9',
-      version: '7.1'
+      browserName: 'internet explorer',
+      platform: 'Windows 7',
+      version: '10'
     },
     sl_ie_11: {
       base: 'SauceLabs',
       browserName: 'internet explorer',
-      platform: 'Windows 8.1',
+      platform: 'Windows 7',
       version: '11'
+    },
+    sl_safari_8: {
+      base: 'SauceLabs',
+      browserName: 'safari',
+      platform: 'OS X 10.10',
+      version: '8.0'
+    },
+    sl_safari_7: {
+      base: 'SauceLabs',
+      browserName: 'safari',
+      platform: 'OS X 10.9',
+      version: '7.0'
+    },
+    sl_safari_ios: {
+      base: 'SauceLabs',
+      browserName: 'iphone',
+      platform: 'OS X 10.10',
+      version: '8.2',
+      deviceName:  'iPhone Simulator',
+      'device-orientation':  'portrait'
     }
   };
 
@@ -35,10 +50,10 @@ module.exports = function(config) {
     ],
 
     sauceLabs: {
-      testName: 'Custom Event Polyfill'
+      testName: 'Custom Event Polyfill',
     },
 
-    frameworks: ['mocha'],
+    frameworks: ['jasmine'],
 
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
