@@ -8,7 +8,7 @@ describe('custom-event-polyfill', function () {
   });
 
   it('should work as expected', function() {
-    var ev = new CustomEvent('test', { pow: 'blammy' });
-    expect(ev.pow).toEqual('blammy');
+    var ev = new CustomEvent('test', { detail: 'blammy' });
+    expect(ev.detail).toEqual('blammy');
   });
 });

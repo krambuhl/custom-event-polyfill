@@ -51,6 +51,8 @@ module.exports = function(config) {
 
     sauceLabs: {
       testName: 'Custom Event Polyfill',
+      // username: '',
+      // accessKey: ''
     },
 
     frameworks: ['jasmine'],
