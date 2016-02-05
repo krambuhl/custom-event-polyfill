@@ -5,7 +5,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent#Polyfill
 
 try {
-  new CustomEvent("test");
+  new window.CustomEvent("test");
 } catch(e) {
  var CustomEvent = function(event, params) {
       var evt;
