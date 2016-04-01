@@ -5,6 +5,7 @@
     "Mozilla Developer Network",
     "Evan Krambuhl <thekrambuhl@gmail.com>"
   ],
+  "license": "MIT",
   "keywords": [
     "polyfill",
     "custom-event",
