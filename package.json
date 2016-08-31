@@ -1,9 +1,14 @@
 {
   "name": "custom-event-polyfill",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "author": [
     "Mozilla Developer Network",
     "Evan Krambuhl <thekrambuhl@gmail.com>"
+  ],
+  "contributors": [
+    "Frank Panetta (http://www.savvi.io)",
+    "Mikhail Reenko <reenko@yandex.ru>",
+    "Joscha Feth <joscha@feth.com> (http://www.feth.com)"
   ],
   "license": "MIT",
   "keywords": [
@@ -12,7 +17,7 @@
     "CustomEvent",
     "Web API Interface"
   ],
-  "main": "./custom-event-polyfill.js",
+  "main": "custom-event-polyfill.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:krambuhl/custom-event-polyfill.git"
