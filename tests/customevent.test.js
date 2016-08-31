@@ -11,4 +11,10 @@ describe('custom-event-polyfill', function () {
     var ev = new CustomEvent('test', { detail: 'blammy' });
     expect(ev.detail).toEqual('blammy');
   });
+
+  it('should be possible to call .preventDefault', function() {
+    var ev = new CustomEvent('test', { cancelable: true });
+    ev.preventDefault();
+    expect(ev.defaultPrevented).toEqual(true);
+  });
 });

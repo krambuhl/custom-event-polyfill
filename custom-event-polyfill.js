@@ -5,7 +5,19 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent#Polyfill
 
 try {
-  new window.CustomEvent("test");
+    var ce = new window.CustomEvent('test', {
+        bubbles: false,
+        cancelable: true,
+        detail: {
+            x: 'y'
+        }
+    });
+    ce.preventDefault();
+    if (ce.defaultPrevented !== true) {
+        // IE has problems with .preventDefault() on custom events
+        // http://stackoverflow.com/questions/23349191
+        throw new Error('Could not prevent default');
+    }
 } catch(e) {
  var CustomEvent = function(event, params) {
       var evt;
@@ -17,6 +29,19 @@ try {
 
       evt = document.createEvent("CustomEvent");
       evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+      var origPrevent = evt.preventDefault;
+      evt.preventDefault = function () {
+          origPrevent.call(this);
+          try {
+              Object.defineProperty(this, 'defaultPrevented', {
+                  get: function () {
+                      return true;
+                  }
+              });
+          } catch(e) {
+              this.defaultPrevented = true;
+          }
+      };
       return evt;
   };
 
