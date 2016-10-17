@@ -41,7 +41,7 @@ try {
 
   CustomEvent.prototype = window.Event.prototype;
   window.CustomEvent = CustomEvent; // expose definition to window
-  if(typeof Event !== 'function') {
+  if(typeof window.Event !== 'function') {
     window.Event = CustomEvent;
   }
 }
