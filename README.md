@@ -8,7 +8,7 @@ Polyfill for creating CustomEvents on IE9/10/11 if native implementation is miss
 $ npm install custom-event-polyfill
 ```
 
-## Useage 
+## Usage 
 
 https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent
 
