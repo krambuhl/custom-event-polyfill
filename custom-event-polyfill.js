@@ -5,7 +5,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent#Polyfill
 
 (function () {
-    if (!window) {
+    if (typeof window === 'undefined') {
         return;
     }
 
