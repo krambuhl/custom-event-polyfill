@@ -18,6 +18,9 @@
     "Web API Interface"
   ],
   "main": "custom-event-polyfill.js",
+  "files": [
+    "custom-event-polyfill.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:krambuhl/custom-event-polyfill.git"
