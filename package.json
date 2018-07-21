@@ -1,6 +1,6 @@
 {
   "name": "custom-event-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": [
     "Mozilla Developer Network",
     "Evan Krambuhl <thekrambuhl@gmail.com>"
